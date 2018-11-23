@@ -1,404 +1,484 @@
+ 
 @font-face {
-  font-family: "Raleway-Regular";
-  src: url(../fonts/Raleway-Regular.ttf);
-}
-@font-face {
-  font-family: "Montserrat-Light";
-  src: url(../fonts/Montserrat-Light.ttf);
-}
-@font-face {
-  font-family: "MyriadPro-Regular";
-  src: url(../fonts/MyriadPro-Regular.ttf);
-}
-@font-face {
-  font-family: "Raleway-ExtraBold";
-  src: url(../fonts/Raleway-ExtraBold.ttf);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-.header-wrapper {
-  min-height: 850px;
-  background: url(../img/header-bg.jpg) no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 0;
-}
-.header-wrapper::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.29);
-  z-index: -1;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px;
-}
-.header {
-  color: #fff;
-}
-.header-top {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 250px;
-}
-
-.header-title {
-  font: 34px "Raleway-Regular", sans-serif;
-  background: url(../img/logo.png) no-repeat left center;
-  padding: 20px 0 0 60px;
-}
-/* MAIN NAVIAGATION */
-.nav {
-  margin-left: auto;
-}
-.nav-list {
-  list-style: none;
-  font: 14px "Montserrat-Light";
-}
-.nav-list__item {
-  display: inline-block;
-  margin-right: 30px;
-}
-.nav-list__link {
-  color: inherit;
-  text-decoration: none;
-}
-.nav-list__item:hover .nav-list__link {
-  color: #c7b299;
-}
-/* BUTTON */
-[class^="button"] {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  margin: 0 10px 0 20px;
-}
-/* SLIDER */
-.header-slider__box {
-  position: relative;
-}
-.header-slider {
-  font-family: "MyriadPro-Regular";
-}
-[type="radio"] {
-  display: none;
-}
-.slide-box {
-  text-align: center;
-  width: 50%;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-}
-.slide-slogan {
-  font-size: 36px;
+    font-family: "Raleway-Regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Montserrat-Light";
+    src: url(../fonts/Montserrat-Light.ttf);
+  }
+  @font-face {
+    font-family: "MyriadPro-Regular";
+    src: url(../fonts/MyriadPro-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Raleway-ExtraBold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .header-wrapper {
+    min-height: 850px;
+    background: url(../img/header-bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+  }
+  .header-wrapper::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.29);
+    z-index: -1;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  .header {
+    color: #fff;
+  }
+  .header-top {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 250px;
+  }
+  
+  .header-title {
+    font: 34px "Raleway-Regular", sans-serif;
+    background: url(../img/logo.png) no-repeat left center;
+    padding: 20px 0 0 60px;
+  }
+  /* MAIN NAVIAGATION */
+  .nav {
+    margin-left: auto;
+  }
+  .nav-list {
+    list-style: none;
+    font: 14px "Montserrat-Light";
+  }
+  .nav-list__item {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  .nav-list__link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .nav-list__item:hover .nav-list__link {
+    color: #c7b299;
+  }
+  /* BUTTON */
+  [class^="button"] {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 10px 0 20px;
+  }
+  /* SLIDER */
+  .header-slider__box {
+    position: relative;
+  }
+  .header-slider {
+    font-family: "MyriadPro-Regular";
+  }
+  [type="radio"] {
+    display: none;
+  }
+  .slide-box {
+    text-align: center;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  .slide-slogan {
+    font-size: 36px;
+      text-shadow: 0 0 10px #fff;
+      margin-bottom: 20px;
+  }
+  .slide-title {
+    font-size: 52px;
+    margin-bottom: 30px;
     text-shadow: 0 0 10px #fff;
-    margin-bottom: 20px;
-}
-.slide-title {
-  font-size: 52px;
-  margin-bottom: 30px;
-  text-shadow: 0 0 10px #fff;
-
-}
-.slide-desc {
-  margin-bottom: 50px;
-  text-shadow: 0 0 5px #fff;
-
-}
-.slide-button {
-  text-transform: uppercase;
-  padding: 25px 35px;
-  background-color: #c7b299;
-  color: inherit;
-  border: none;
-  border-radius: 3px;
-  font-family: "Raleway-ExtraBold";
-  font-size: 14px; 
-  cursor: pointer;
-}  
-@keyframes bounce {
-  from,
-  20%,
-  53%,
-  80%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+  
   }
-
-  40%,
-  43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
+  .slide-desc {
+    margin-bottom: 50px;
+    text-shadow: 0 0 5px #fff;
+  
   }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
+  .slide-button {
+    text-transform: uppercase;
+    padding: 25px 35px;
+    background-color: #c7b299;
+    color: inherit;
+    border: none;
+    border-radius: 3px;
+    font-family: "Raleway-ExtraBold";
+    font-size: 14px; 
+    cursor: pointer;
+  }  
+  @keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
   }
-
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
+  .slide-button:hover{
+    animation: bounce 1s  infinite;
   }
-}
-.slide-button:hover{
-  animation: bounce 1s  infinite;
-}
-.slide-box > div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translatex(100%);
-  transition: all 0.3s ease-in;
-}
-/* PAGINATION BLOCK  */
-.control-box {
-  position: absolute;
-  bottom: -15%;
-  left: 47%;
-}
-/* PAGINATION CIRCLE */
-.control-box label {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.404);
-  margin: 0 7px;
-}
-.control-box label:hover{
-  box-shadow: 0 0 3px 2px #fff;
-}
-/* PAGINATION ARROW BLOCK */
-.control {
-  position: absolute;
-  top: 50%;
-  width: 50px;
-  height: 50px;
-  margin-top: -25px; 
+  .slide-box > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translatex(100%);
+    transition: all 0.3s ease-in;
   }
-  .next {
-  right: 5%;
+  /* PAGINATION BLOCK  */
+  .control-box {
+    position: absolute;
+    bottom: -15%;
+    left: 47%;
   }
-  .previous {
-  left: 5%;
+  /* PAGINATION CIRCLE */
+  .control-box label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.404);
+    margin: 0 7px;
   }
-  .control label { 
-  display: none;
-  text-align: center;
-  line-height: 50px;
-  font-size: 50px;
-  color: #FFF;
-  cursor: pointer; 
+  .control-box label:hover{
+    box-shadow: 0 0 3px 2px #fff;
   }
-  .control label:hover{
-    text-shadow: 0 0 20px #fff;
+  /* PAGINATION ARROW BLOCK */
+  .control {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px; 
+    }
+    .next {
+    right: 5%;
+    }
+    .previous {
+    left: 5%;
+    }
+    .control label { 
+    display: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    color: #FFF;
+    cursor: pointer; 
+    }
+    .control label:hover{
+      text-shadow: 0 0 20px #fff;
+    }
+  
+  /* ===> MAGIC <=== */
+  
+  /* FIRST ==> 
+  MAKE ACTIVE PAG CIRCLE 
+   */
+  .control-1:checked ~ .control-box [for="control-1"],
+  .control-2:checked ~ .control-box [for="control-2"],
+  .control-3:checked ~ .control-box [for="control-3"] {
+    box-shadow: 0 0 0 2px #fff;
+    background-color: transparent;
   }
-
-/* ===> MAGIC <=== */
-
-/* FIRST ==> 
-MAKE ACTIVE PAG CIRCLE 
- */
-.control-1:checked ~ .control-box [for="control-1"],
-.control-2:checked ~ .control-box [for="control-2"],
-.control-3:checked ~ .control-box [for="control-3"] {
-  box-shadow: 0 0 0 2px #fff;
-  background-color: transparent;
-}
-/* SECOND ==> 
-CHOOSE ACTIVE ARROW AND REMOVE IF CONTROLLER END
-*/
-.control-1:checked ~ .next [for="control-2"],
-.control-2:checked ~ .next [for="control-3"], 
-.control-3:checked ~ .previous [for="control-2"],
-.control-2:checked ~ .previous [for="control-1"]{
-  display: block;
-}
-/* THIRD ==>
-SHOW CHOOSEN SLIDE
-*/
-.control-1:checked ~ .slide-box .slide-1,
-.control-2:checked ~ .slide-box .slide-2,
-.control-3:checked ~ .slide-box .slide-3 {
-  transform: translatex(0);
-  transition: all 0.5s linear;
-}
-/* ________________888888888888888888888888 
-_______________8888ooo8888888888888888888888888 
-_____________8888oooooo8888888888888888888888888888 
-____________88oooooooo888ooo8888888888888888888888888 
-__________88888888oooo8ooooooooooo88888888888888888888 
-________888_8oo888888oooooooooooooooooo88888888888 888 
-___________88oooo88888888oooomoooooooooo88888888888 8 
-_________888888888888888888oMooooooooooo8888888888888 
-________88888888888888888888ooooooooooooM88888888888888 
-________8888888888888888888888oooooooooM8888888888888888 
-_________8888888888888888888888oooooooM888888888888888888 
-________8888888888888888oo88888ooooooM88888888888888888888 
-______88888888888888888ooo88888oooooM888888888888888 8888 
-_____88888888888888888ooo88888ooooMoo;o*M*o;888888888 88 
-____88888888888888888ooo8888oooooMooooooooooo88888888 8 
-___88888888888888888oooo88ooooooMo;ooooooooooo888888888 
-__8888888888888888888ooo8ooooooMooaAaooooooooM8888888888_______ 
-__88___8888888888oo88oooo8ooooMooooooooooooo888888888888888_8888 
-_88__88888888888ooo8oooooooooMoooooooooo;oo88o88888888888888888 
-_8__8888888888888oooooooooooMoo"@@@@@"oooo8w8888888888888888 
-__88888888888o888ooooooooooMooooo"@a@"oooooM8i888888888888888 
-_8888888888oooo88oooooooooM88oooooooooooooM88z88888888888888888 
-8888888888ooooo8oooooooooM88888oooooooooMM888!888888888888888888 
-888888888ooooo8oooooooooM8888888MAmmmAMVMM888*88888888___88888888 
-888888_MoooooooooooooooM888888888oooooooMM88888888888888___8888888 8888___MooooooooooooooM88888888888ooooooMM888888888888888____88888 
-_888___MoooooooooooooM8888888888888MooooomM888888888888888____8888 
-__888__MooooooooooooM8888o888888888888oooomooMm88888_888888___8888 
-___88__Moooooooooooo8888o88888888888888888ooooooMm8___88888___888 
-___88__Moooooooooo8888Moo88888oo888888888888oooooooMm88888____88 
-___8___MMoooooooo8888Mooo8888ooooo888888888888ooooooooMm8_____8 
-_______8Mooooooo8888Mooooo888ooooooo88ooo8888888ooooooooMm____8 
-______88MMooooo8888Mooooooo88oooooooo8ooooo888888oooMoooooM 
-_____8888Mooooo888MMoooooooo8oooooooooooMoooo8888ooooMooooM 
-____88888Mooooo88oMoooooooooo8oooooooooooMooo8888ooooooMooM 
-___88_888MMooo888oMoooooooooooooooooooooooMo8888oooooooooMo 
-___8_88888Mooo88ooMoooooooooooooooooooooooMMo88ooooooooooooM 
-_____88888Mooo88ooMoooooooooo*88*ooooooooooMo88ooooooooooooooM 
-____888888Mooo88ooMooooooooo88@@88ooooooooMoo88ooooooooooooooM 
-____888888MMoo88ooMMoooooooo88@@88oooooooMooo8ooooooooooooooo*8 
-____88888__Mooo8ooMMooooooooo*88*ooooooooooMooooooooooooooooo88@@ 
-____8888___MMooooooMMoooooooooooooooooooooMMooooooooooooooooo88@@ 
-_____888____MoooooooMMoooooooooooooooooooMMooMooooooooooooooooo*8 
-_____888____MMoooooooMMMooooooooooooooooMMoooMMoooooooooooooooM 
-______88_____MooooooooMMMMoooooooooooMMMMoooooMMooooooooooooMM 
-_______88____MMoooooooooMMMMMMMMMMMMMooooooooMMMooooooooMM 
-________88____MMooooooooooooMMMMMMMooooooooooooMMMMMMMMMM 
-_________88___8MMooooooooooooooooooooooooooooooooooMMMMMM 
-__________8___88MMooooooooooooooooooooooMoooMooooooooMM 
-______________888MMooooooooooooooooooMMooooooMMooooooMM 
-_____________88888MMoooooooooooooooMMMooooooomMoooooMM 
-_____________888888MMoooooooooooooMMMoooooooooMMMoooM 
-____________88888888MMoooooooooooMMMoooooooooooMMoooM 
-___________88_8888888MoooooooooMMMooooooooooooooMoooM 
-___________8__888888_MoooooooMMoooooooooooooooooMoooMo 
-______________888888_MooooooMoooooooooooooooooooMoooMM 
-_____________888888__MoooooMooooooooooooooooooooooooMoM 
-_____________888888__MoooooMooooooooo@ooooooooooooooMooM 
-_____________88888___Moooooooooooooo@@oooooooooooooooMooM 
-____________88888___Moooooooooooooo@@@ooooooooooooooooMooM 
-___________88888___Mooooooooooooooo@@ooooooooooooooooooMooM 
-__________88888___Mooooomoooooooooo@ooooooooooMmoooooooMoooM 
-__________8888___MoooooMoooooooooooooooooooooooMMoooooooMoooM 
-_________8888___MoooooMoooooooooooooooooooooooMMMooooooooMoooM 
-________888____MoooooMmooooooooooooooooooooooMMMoooooooooMooooM 
-______8888____MMooooMmoooooooooooooooooooooMMMMooooooooomoomoooM 
-_____888______MoooooMooooooooooooooooooooMMMooooooooooooMoommoooM 
-__8888_______MMoooooooooooooooooooooooooMMooooooooooooomMooMMoooMo 
-_____________MoooooooooooooooooooooooooMooooooooooooooomMooMMoooMm 
-____________MMoooooomoooooooooooooooooooooooooooooooooooMooMMoooMM 
-____________MooooooooMoooooooooooooooooooooooooooooooooooMooMoooMM 
-___________MMoooooooooMoooooooooooooMoooooooooooooooooooooMoMoooMM 
-___________MoooooooooooM88oooooooooMoooooooooooooooooooooooMMooMMM 
-___________Moooooooooooo8888888888MooooooooooooooooooooooooMMooMM 
-___________Mooooooooooooo88888888MoooooooooooooooooooooooooMooMM 
-___________Moooooooooooooo888888MoooooooooooooooooooooooooMooMM 
-___________Mooooooooooooooo88888MoooooooooooooooooooooooooMoMM 
-___________Mooooooooooooooooo88MooooooooooooooooooooooooooMMM 
-___________MoooooooooooooooooooMooooooooooooooooooooooooooMMM 
-___________MMoooooooooooooooooMooooooooooooooooooooooooooMMM 
-____________MoooooooooooooooooMooooooooooooooooooooooooooMMM 
-____________MMoooooooooooooooMooooooooooooooooooooooooooMMM 
-_____________MoooooooooooooooMoooooooooooooooooooooooooMMM 
-_____________MMoooooooooooooMoooooooooooooooooooooooooMMM 
-______________MoooooooooooooMooooooooooooooooooooooooMMM 
-______________MMoooooooooooMooooooooooooooooooooooooMMM 
-_______________MoooooooooooMoooooooooooooooooooooooMMM 
-_______________MMoooooooooMoooooooooooooooooooooooMMM 
-________________MoooooooooMooooooooooooooooooooooMMM 
-________________MMoooooooMooooooooooooooooooooooMMM 
-_________________MMooooooMoooooooooooooooooooooMMM 
-_________________MMoooooMoooooooooooooooooooooMMM 
-__________________MMooooMooooooooooooooooooooMMM 
-__________________MMoooMooooooooooooooooooooMMM 
-___________________MMooMoooooooooooooooooooMMM 
-___________________MMoMoooooooooooooooooooMMM 
-____________________MMMooooooooooooooooooMMM 
-____________________MMooooooooooooooooooMMM 
-_____________________MoooooooooooooooooMMM 
-____________________MMooooooooooooooooMMM 
-____________________MMoooooooooooooooMMM 
-____________________MMooooMoooooooooMMMo 
-____________________mMMooooMMoooooooMMMM 
-_____________________MMMoooooooooooMMMoM 
-_____________________mMMoooMoooooooMoMoM 
-______________________MMooMMMMoooooooMoM 
-______________________MMooMMMooooooooMoM 
-______________________mMMooMMooooooooMoM 
-_______________________MMooMMoooooooooMoM 
-_______________________MMooMMooooooooooMom 
-_______________________MMoooMoooooooooooMM 
-_______________________MMMoooooooooooooooMo 
-_______________________MMMoooooooooooooooMo 
-_______________________MMMooooooooooooooooM 
-_______________________MMMooooooooooooooooM 
-_______________________MMMooooooooooooooooMm 
-________________________MMooooooooooooooooMM 
-________________________MMMoooooooooooooooMM 
-________________________MMMoooooooooooooooMM 
-________________________MMMoooooooooooooooMM 
-________________________MMMoooooooooooooooMM 
-_________________________MMooooooooooooooMMM 
-_________________________MMMoooooooooooooMM 
-_________________________MMMoooooooooooooMM 
-_________________________MMMooooooooooooMM 
-__________________________MMooooooooooooMM 
-__________________________MMooooooooooooMM 
-__________________________MMoooooooooooMM 
-__________________________MMMooooooooooMM 
-__________________________MMMooooooooooMM 
-___________________________MMoooooooooMM 
-___________________________MMMooooooooMM 
-___________________________MMMooooooooMM 
-____________________________MMooooooooMM 
-____________________________MMMooooooMM 
-____________________________MMMooooooMM 
-_____________________________MMooooooMM 
-_____________________________MMooooooMM 
-______________________________MMoooooMM 
-______________________________MMoooooMMo 
-______________________________MMoooooMoM 
-______________________________MMoooooMoM 
-______________________________oMooooooMo 
-_____________________________MoMoooooooM 
-____________________________MoooMooooooM 
-___________________________MooooMooooooM 
-__________________________MoooooMoooooooM 
-_________________________MooooooMMoooooooM 
-_________________________MoooooooMooooooooM 
-_________________________M;o;ooooMoooooooooM 
-_________________________Momo;oooMooooooooooM 
-_________________________MMomomooMoooooooo;oM 
-__________________________MMomooMMooooooo;o;M 
-___________________________MMooMMMoooooo;omoM 
-___________________________MMMM_MMoooomomoMM 
-__________________________________MMoooomoMM 
-___________________________________MMooooMM 
-____________________________________MMooMM 
+  /* SECOND ==> 
+  CHOOSE ACTIVE ARROW AND REMOVE IF CONTROLLER END
   */
+  .control-1:checked ~ .next [for="control-2"],
+  .control-2:checked ~ .next [for="control-3"], 
+  .control-3:checked ~ .previous [for="control-2"],
+  .control-2:checked ~ .previous [for="control-1"]{
+    display: block;
+  }
+  /* THIRD ==>
+  SHOW CHOOSEN SLIDE
+  */
+  .control-1:checked ~ .slide-box .slide-1,
+  .control-2:checked ~ .slide-box .slide-2,
+  .control-3:checked ~ .slide-box .slide-3 {
+    transform: translatex(0);
+    transition: all 0.5s linear;
+  } 
+  /* Nasariy */
+  
+  .projects-title{
+      margin-top: 82px;
+      text-align: center;
+      font-family: "Raleway";
+      font-weight: 600;
+      font-size: 30px;
+      color: rgba(85, 85, 85);
+  }
+  
+  .projects-subtitle{
+      width: 757px;
+      margin: 24px auto 0;
+      text-align: center;
+      font-family: "Montserrat";
+      font-weight: 300;
+      font-size: 16px;
+      color: rgba(140, 140, 140);
+  }
+  
+  .projects-menu{
+      width: 1172px;
+      margin: 40px auto 0;
+      width: 605px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .projects-item__link{
+      text-decoration: none;
+      padding: 10px 23px;
+      border: 1px solid #ebebeb;
+      font-family: "Montserrat";
+      font-weight: 300;
+      font-size: 14px;
+      color: rgba(140, 140, 140);
+  }
+  
+  .projects-item__link:hover{
+      background-color: #998675;
+      color: #fff;
+      transition: all 200ms linear;
+  }
+  
+  .gallery-list{
+      width: 1172px;
+      margin: 38px auto 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  
+  .gallery-item{
+      background-color: black;
+  }
+  
+  .gallery-item:nth-last-child(-n+3){
+      margin-top: 28px;
+  }
+  
+  .gallery-item:hover .gallery-text{
+      background-color: #362f2d;
+      transition: all 200ms linear;
+  }
+  
+  .gallery-item:hover .gallery-title{
+      color: #fff;
+      transition: all 200ms linear;
+  }
+  
+  .gallery-item:hover .gallery-subtitle{
+      transition: all 200ms linear;
+      color: rgba(199, 178, 153);
+  }
+  
+  .gallery-item:hover .gallery-img{
+      transition: all 200ms linear;
+      opacity: 0.3;
+  }
+  
+  .gallery-item:hover .icon-container{
+      display: flex;
+  }
+  
+  .gallery-item:hover .image-icons{
+      fill: #362f2d;
+      transition: all 200ms linear;
+  }
+  
+  .icon-wrapper{
+      position: relative;
+  }
+  
+  .icon-container{
+      width: 80px;
+      display: none;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  
+  .gallery-icons{
+      height: 26px;
+      width: 26px;
+      fill: #fff;
+  }
+  
+  .image-icons{
+      width: 30px;
+      height: 10px;
+      fill: #fbfaf8;
+      position: absolute;
+      bottom: -1px;
+      left: 20px;
+      display: block;
+  }
+  
+  .gallery-icons:hover{
+      fill: #c7b299;
+  }
+  
+  .gallery-img{
+      width: 373px;
+      height: 240px;
+      display: block;
+  }
+  
+  .gallery-text{
+      padding-left: 28px;
+      background-color: #fbfaf8;
+  }
+  
+  .gallery-title{
+      padding-top: 29px;
+      font-family: "Raleway";
+      font-weight: 600;
+      font-size: 20px;
+      color: rgba(199, 178, 153);
+  }
+  
+  .gallery-subtitle{
+      margin-top: 14px;
+      padding-bottom: 17px;
+      font-family: "Montserrat";
+      font-weight: 300;
+      font-size: 14px;
+      color: rgba(140, 140, 140);
+  }
+  
+  .projects-button{
+      display: block;
+      margin: 40px auto 78px;
+      width: 170px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      background-color: #998675;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      font-family: "Raleway";
+      font-weight: 800;
+      font-size: 14px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 2px 0px rgba(115,99,87,1);
+  }
+  
+  .projects-button:hover{
+      background-color: #c7b299;
+      box-shadow: 0px 3px 5px 0px rgba(115,99,87,1);
+      transition: all 200ms linear;
+  }
+
+  
+/* Artiom */
+
+.pa__box{
+    width: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.pa__pic{
+    width: 100%;
+}
+.pa__home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.pa__play{
+    border: none;
+    background-image: url("../img/play.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin-bottom: 59px;
+}
+.pa__name-video{
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-bottom: 29px;
+}
+.pa__description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    padding-bottom: 40px;
+}
+
+.pa__time{
+    color: #9c8e7f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+.pa__box::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
