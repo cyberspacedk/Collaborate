@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.recent-title{
+    font-family: "Roboto";
+    color: #555555;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.recent-text{
+    font-family: "Roboto";
+    text-align: center;
+    width: 725px;
+    word-wrap: normal;
+    margin: 35px auto 0;
+}
+
+.recent-content{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 40px auto 0;
+    list-style: none;
+}
+.recent-list{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.recent-wrap{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 10px 311px 243px 10px;
+}
+
+.recent-date{
+    background-color: #363636;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 300;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+}
+.recent-month{
+    background-color: #252525;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    
+}
+
+.recent-img-title{
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 500;
+    color: #555555;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.recent-img-text{
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    color: #959595;
+    margin-top: 20px;
+    padding-left: 30px;
+    width: 310px;
+    word-wrap: break-word;
+}
+
+.recent-link{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(199, 178, 153);
+    line-height: 1.429;
+    padding-left: 30px;
+    margin-top: 20px;
+    display: block;
+    padding-block-end: 33px;
+    transition-duration: 300ms;
+}
+
+.recent-link::after{
+    content: "►";
+    padding-left: 3px;
+    font-size: 10px;
+
+}
+
+.recent-list:hover {
+    background-color: #362f2d;
+    transition: all;
+    transition-duration: 300ms;
+    box-shadow: 0px 5px 5px #555555;
+}
+
+.recent-list:hover .recent-date{
+    color: #fff;
+    background-color: #c7b299;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.recent-list:hover .recent-month{
+    color: #fff;
+    background-color: #a48d72;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.recent-list:hover .recent-img-title{
+    color: #c7b299;
+    transition: all;
+    transition-duration: 300ms;
+}
+.recent-list:hover .recent-img-text{
+    color: #c7b299;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.recent-list:hover .recent-link{
+    color: #c7b299;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+
+.recent-arrows{
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.recent-bottom{
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.arrowleft:hover{
+    color: #252525;
+}
+
