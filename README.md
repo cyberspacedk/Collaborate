@@ -1,2 +1,2 @@
 # Collaborate
-## [Link](https://cyberspacedk.github.io/Collaborate/header.html)
+## [Link](https://cyberspacedk.github.io/Collaborate/index.html)
